@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7D93B3F29728DDA0016F7E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B3E29728DDA0016F7E8 /* AppDelegate.swift */; };
+		B7D93B4129728DDA0016F7E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B4029728DDA0016F7E8 /* SceneDelegate.swift */; };
+		B7D93B4329728DDA0016F7E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B4229728DDA0016F7E8 /* ViewController.swift */; };
+		B7D93B4629728DDA0016F7E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D93B4429728DDA0016F7E8 /* Main.storyboard */; };
+		B7D93B4929728DDA0016F7E8 /* rhythmScore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B4729728DDA0016F7E8 /* rhythmScore.xcdatamodeld */; };
+		B7D93B4B29728DDB0016F7E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7D93B4A29728DDB0016F7E8 /* Assets.xcassets */; };
+		B7D93B4E29728DDB0016F7E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D93B4C29728DDB0016F7E8 /* LaunchScreen.storyboard */; };
+		B7D93B5929728DDC0016F7E8 /* rhythmScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B5829728DDC0016F7E8 /* rhythmScoreTests.swift */; };
+		B7D93B6329728DDC0016F7E8 /* rhythmScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B6229728DDC0016F7E8 /* rhythmScoreUITests.swift */; };
+		B7D93B6529728DDC0016F7E8 /* rhythmScoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B6429728DDC0016F7E8 /* rhythmScoreUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7D93B5529728DDC0016F7E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7D93B3329728DDA0016F7E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7D93B3A29728DDA0016F7E8;
+			remoteInfo = rhythmScore;
+		};
+		B7D93B5F29728DDC0016F7E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7D93B3329728DDA0016F7E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7D93B3A29728DDA0016F7E8;
+			remoteInfo = rhythmScore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7D93B3B29728DDA0016F7E8 /* rhythmScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rhythmScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D93B3E29728DDA0016F7E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7D93B4029728DDA0016F7E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B7D93B4229728DDA0016F7E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7D93B4529728DDA0016F7E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7D93B4829728DDA0016F7E8 /* rhythmScore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = rhythmScore.xcdatamodel; sourceTree = "<group>"; };
+		B7D93B4A29728DDB0016F7E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7D93B4D29728DDB0016F7E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7D93B4F29728DDB0016F7E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7D93B5429728DDC0016F7E8 /* rhythmScoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rhythmScoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D93B5829728DDC0016F7E8 /* rhythmScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rhythmScoreTests.swift; sourceTree = "<group>"; };
+		B7D93B5E29728DDC0016F7E8 /* rhythmScoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rhythmScoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D93B6229728DDC0016F7E8 /* rhythmScoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rhythmScoreUITests.swift; sourceTree = "<group>"; };
+		B7D93B6429728DDC0016F7E8 /* rhythmScoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rhythmScoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7D93B3829728DDA0016F7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7D93B5129728DDB0016F7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7D93B5B29728DDC0016F7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7D93B3229728DDA0016F7E8 = {
+			isa = PBXGroup;
+			children = (
+				B7D93B3D29728DDA0016F7E8 /* rhythmScore */,
+				B7D93B5729728DDC0016F7E8 /* rhythmScoreTests */,
+				B7D93B6129728DDC0016F7E8 /* rhythmScoreUITests */,
+				B7D93B3C29728DDA0016F7E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7D93B3C29728DDA0016F7E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7D93B3B29728DDA0016F7E8 /* rhythmScore.app */,
+				B7D93B5429728DDC0016F7E8 /* rhythmScoreTests.xctest */,
+				B7D93B5E29728DDC0016F7E8 /* rhythmScoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7D93B3D29728DDA0016F7E8 /* rhythmScore */ = {
+			isa = PBXGroup;
+			children = (
+				B7D93B3E29728DDA0016F7E8 /* AppDelegate.swift */,
+				B7D93B4029728DDA0016F7E8 /* SceneDelegate.swift */,
+				B7D93B4229728DDA0016F7E8 /* ViewController.swift */,
+				B7D93B4429728DDA0016F7E8 /* Main.storyboard */,
+				B7D93B4A29728DDB0016F7E8 /* Assets.xcassets */,
+				B7D93B4C29728DDB0016F7E8 /* LaunchScreen.storyboard */,
+				B7D93B4F29728DDB0016F7E8 /* Info.plist */,
+				B7D93B4729728DDA0016F7E8 /* rhythmScore.xcdatamodeld */,
+			);
+			path = rhythmScore;
+			sourceTree = "<group>";
+		};
+		B7D93B5729728DDC0016F7E8 /* rhythmScoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7D93B5829728DDC0016F7E8 /* rhythmScoreTests.swift */,
+			);
+			path = rhythmScoreTests;
+			sourceTree = "<group>";
+		};
+		B7D93B6129728DDC0016F7E8 /* rhythmScoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B7D93B6229728DDC0016F7E8 /* rhythmScoreUITests.swift */,
+				B7D93B6429728DDC0016F7E8 /* rhythmScoreUITestsLaunchTests.swift */,
+			);
+			path = rhythmScoreUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7D93B3A29728DDA0016F7E8 /* rhythmScore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7D93B6829728DDC0016F7E8 /* Build configuration list for PBXNativeTarget "rhythmScore" */;
+			buildPhases = (
+				B7D93B3729728DDA0016F7E8 /* Sources */,
+				B7D93B3829728DDA0016F7E8 /* Frameworks */,
+				B7D93B3929728DDA0016F7E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rhythmScore;
+			productName = rhythmScore;
+			productReference = B7D93B3B29728DDA0016F7E8 /* rhythmScore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7D93B5329728DDB0016F7E8 /* rhythmScoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7D93B6B29728DDC0016F7E8 /* Build configuration list for PBXNativeTarget "rhythmScoreTests" */;
+			buildPhases = (
+				B7D93B5029728DDB0016F7E8 /* Sources */,
+				B7D93B5129728DDB0016F7E8 /* Frameworks */,
+				B7D93B5229728DDB0016F7E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7D93B5629728DDC0016F7E8 /* PBXTargetDependency */,
+			);
+			name = rhythmScoreTests;
+			productName = rhythmScoreTests;
+			productReference = B7D93B5429728DDC0016F7E8 /* rhythmScoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B7D93B5D29728DDC0016F7E8 /* rhythmScoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7D93B6E29728DDC0016F7E8 /* Build configuration list for PBXNativeTarget "rhythmScoreUITests" */;
+			buildPhases = (
+				B7D93B5A29728DDC0016F7E8 /* Sources */,
+				B7D93B5B29728DDC0016F7E8 /* Frameworks */,
+				B7D93B5C29728DDC0016F7E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7D93B6029728DDC0016F7E8 /* PBXTargetDependency */,
+			);
+			name = rhythmScoreUITests;
+			productName = rhythmScoreUITests;
+			productReference = B7D93B5E29728DDC0016F7E8 /* rhythmScoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7D93B3329728DDA0016F7E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					B7D93B3A29728DDA0016F7E8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					B7D93B5329728DDB0016F7E8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B7D93B3A29728DDA0016F7E8;
+					};
+					B7D93B5D29728DDC0016F7E8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B7D93B3A29728DDA0016F7E8;
+					};
+				};
+			};
+			buildConfigurationList = B7D93B3629728DDA0016F7E8 /* Build configuration list for PBXProject "rhythmScore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7D93B3229728DDA0016F7E8;
+			productRefGroup = B7D93B3C29728DDA0016F7E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7D93B3A29728DDA0016F7E8 /* rhythmScore */,
+				B7D93B5329728DDB0016F7E8 /* rhythmScoreTests */,
+				B7D93B5D29728DDC0016F7E8 /* rhythmScoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7D93B3929728DDA0016F7E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D93B4E29728DDB0016F7E8 /* LaunchScreen.storyboard in Resources */,
+				B7D93B4B29728DDB0016F7E8 /* Assets.xcassets in Resources */,
+				B7D93B4629728DDA0016F7E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7D93B5229728DDB0016F7E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7D93B5C29728DDC0016F7E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7D93B3729728DDA0016F7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D93B4929728DDA0016F7E8 /* rhythmScore.xcdatamodeld in Sources */,
+				B7D93B4329728DDA0016F7E8 /* ViewController.swift in Sources */,
+				B7D93B3F29728DDA0016F7E8 /* AppDelegate.swift in Sources */,
+				B7D93B4129728DDA0016F7E8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7D93B5029728DDB0016F7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D93B5929728DDC0016F7E8 /* rhythmScoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7D93B5A29728DDC0016F7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D93B6329728DDC0016F7E8 /* rhythmScoreUITests.swift in Sources */,
+				B7D93B6529728DDC0016F7E8 /* rhythmScoreUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7D93B5629728DDC0016F7E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7D93B3A29728DDA0016F7E8 /* rhythmScore */;
+			targetProxy = B7D93B5529728DDC0016F7E8 /* PBXContainerItemProxy */;
+		};
+		B7D93B6029728DDC0016F7E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7D93B3A29728DDA0016F7E8 /* rhythmScore */;
+			targetProxy = B7D93B5F29728DDC0016F7E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7D93B4429728DDA0016F7E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7D93B4529728DDA0016F7E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7D93B4C29728DDB0016F7E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7D93B4D29728DDB0016F7E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7D93B6629728DDC0016F7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7D93B6729728DDC0016F7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7D93B6929728DDC0016F7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S7EA557V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = rhythmScore/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shsw228.rhythmScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7D93B6A29728DDC0016F7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S7EA557V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = rhythmScore/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shsw228.rhythmScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B7D93B6C29728DDC0016F7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S7EA557V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shsw228.rhythmScoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rhythmScore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/rhythmScore";
+			};
+			name = Debug;
+		};
+		B7D93B6D29728DDC0016F7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S7EA557V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shsw228.rhythmScoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rhythmScore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/rhythmScore";
+			};
+			name = Release;
+		};
+		B7D93B6F29728DDC0016F7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S7EA557V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shsw228.rhythmScoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rhythmScore;
+			};
+			name = Debug;
+		};
+		B7D93B7029728DDC0016F7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S7EA557V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shsw228.rhythmScoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rhythmScore;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7D93B3629728DDA0016F7E8 /* Build configuration list for PBXProject "rhythmScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D93B6629728DDC0016F7E8 /* Debug */,
+				B7D93B6729728DDC0016F7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7D93B6829728DDC0016F7E8 /* Build configuration list for PBXNativeTarget "rhythmScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D93B6929728DDC0016F7E8 /* Debug */,
+				B7D93B6A29728DDC0016F7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7D93B6B29728DDC0016F7E8 /* Build configuration list for PBXNativeTarget "rhythmScoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D93B6C29728DDC0016F7E8 /* Debug */,
+				B7D93B6D29728DDC0016F7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7D93B6E29728DDC0016F7E8 /* Build configuration list for PBXNativeTarget "rhythmScoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D93B6F29728DDC0016F7E8 /* Debug */,
+				B7D93B7029728DDC0016F7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B7D93B4729728DDA0016F7E8 /* rhythmScore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B7D93B4829728DDA0016F7E8 /* rhythmScore.xcdatamodel */,
+			);
+			currentVersion = B7D93B4829728DDA0016F7E8 /* rhythmScore.xcdatamodel */;
+			path = rhythmScore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B7D93B3329728DDA0016F7E8 /* Project object */;
+}
