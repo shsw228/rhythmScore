@@ -17,6 +17,9 @@
 		B7D93B5929728DDC0016F7E8 /* rhythmScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B5829728DDC0016F7E8 /* rhythmScoreTests.swift */; };
 		B7D93B6329728DDC0016F7E8 /* rhythmScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B6229728DDC0016F7E8 /* rhythmScoreUITests.swift */; };
 		B7D93B6529728DDC0016F7E8 /* rhythmScoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B6429728DDC0016F7E8 /* rhythmScoreUITestsLaunchTests.swift */; };
+		B7D93B722972C3B20016F7E8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B712972C3B20016F7E8 /* HomeViewModel.swift */; };
+		B7D93B762972CC300016F7E8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B752972CC300016F7E8 /* Constant.swift */; };
+		B7D93B8029730A120016F7E8 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = B7D93B7F29730A120016F7E8 /* RswiftLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 		B7D93B5E29728DDC0016F7E8 /* rhythmScoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rhythmScoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D93B6229728DDC0016F7E8 /* rhythmScoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rhythmScoreUITests.swift; sourceTree = "<group>"; };
 		B7D93B6429728DDC0016F7E8 /* rhythmScoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rhythmScoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B7D93B712972C3B20016F7E8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B7D93B752972CC300016F7E8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D93B8029730A120016F7E8 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,13 +107,11 @@
 		B7D93B3D29728DDA0016F7E8 /* rhythmScore */ = {
 			isa = PBXGroup;
 			children = (
-				B7D93B3E29728DDA0016F7E8 /* AppDelegate.swift */,
-				B7D93B4029728DDA0016F7E8 /* SceneDelegate.swift */,
+				B7D93B742972CB7A0016F7E8 /* Supporting File */,
+				B7D93B732972CB4E0016F7E8 /* Resources */,
 				B7D93B4229728DDA0016F7E8 /* ViewController.swift */,
+				B7D93B712972C3B20016F7E8 /* HomeViewModel.swift */,
 				B7D93B4429728DDA0016F7E8 /* Main.storyboard */,
-				B7D93B4A29728DDB0016F7E8 /* Assets.xcassets */,
-				B7D93B4C29728DDB0016F7E8 /* LaunchScreen.storyboard */,
-				B7D93B4F29728DDB0016F7E8 /* Info.plist */,
 				B7D93B4729728DDA0016F7E8 /* rhythmScore.xcdatamodeld */,
 			);
 			path = rhythmScore;
@@ -130,6 +134,26 @@
 			path = rhythmScoreUITests;
 			sourceTree = "<group>";
 		};
+		B7D93B732972CB4E0016F7E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B7D93B4A29728DDB0016F7E8 /* Assets.xcassets */,
+				B7D93B752972CC300016F7E8 /* Constant.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B7D93B742972CB7A0016F7E8 /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				B7D93B4029728DDA0016F7E8 /* SceneDelegate.swift */,
+				B7D93B3E29728DDA0016F7E8 /* AppDelegate.swift */,
+				B7D93B4C29728DDB0016F7E8 /* LaunchScreen.storyboard */,
+				B7D93B4F29728DDB0016F7E8 /* Info.plist */,
+			);
+			path = "Supporting File";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,8 +168,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				B7D93B8429730E4E0016F7E8 /* PBXTargetDependency */,
 			);
 			name = rhythmScore;
+			packageProductDependencies = (
+				B7D93B7F29730A120016F7E8 /* RswiftLibrary */,
+			);
 			productName = rhythmScore;
 			productReference = B7D93B3B29728DDA0016F7E8 /* rhythmScore.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +246,9 @@
 				Base,
 			);
 			mainGroup = B7D93B3229728DDA0016F7E8;
+			packageReferences = (
+				B7D93B7E29730A120016F7E8 /* XCRemoteSwiftPackageReference "R" */,
+			);
 			productRefGroup = B7D93B3C29728DDA0016F7E8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,7 +295,9 @@
 				B7D93B4929728DDA0016F7E8 /* rhythmScore.xcdatamodeld in Sources */,
 				B7D93B4329728DDA0016F7E8 /* ViewController.swift in Sources */,
 				B7D93B3F29728DDA0016F7E8 /* AppDelegate.swift in Sources */,
+				B7D93B722972C3B20016F7E8 /* HomeViewModel.swift in Sources */,
 				B7D93B4129728DDA0016F7E8 /* SceneDelegate.swift in Sources */,
+				B7D93B762972CC300016F7E8 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +330,10 @@
 			isa = PBXTargetDependency;
 			target = B7D93B3A29728DDA0016F7E8 /* rhythmScore */;
 			targetProxy = B7D93B5F29728DDC0016F7E8 /* PBXContainerItemProxy */;
+		};
+		B7D93B8429730E4E0016F7E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = B7D93B8329730E4E0016F7E8 /* RswiftGenerateInternalResources */;
 		};
 /* End PBXTargetDependency section */
 
@@ -443,7 +480,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3S7EA557V7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = rhythmScore/Info.plist;
+				INFOPLIST_FILE = "rhythmScore/Supporting File/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -471,7 +508,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3S7EA557V7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = rhythmScore/Info.plist;
+				INFOPLIST_FILE = "rhythmScore/Supporting File/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -606,6 +643,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7D93B7E29730A120016F7E8 /* XCRemoteSwiftPackageReference "R" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift#xcode-project---spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7D93B7F29730A120016F7E8 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7D93B7E29730A120016F7E8 /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
+		};
+		B7D93B8329730E4E0016F7E8 /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:RswiftGenerateInternalResources";
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B7D93B4729728DDA0016F7E8 /* rhythmScore.xcdatamodeld */ = {
