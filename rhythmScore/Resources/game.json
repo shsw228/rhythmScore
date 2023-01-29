@@ -1,0 +1,52 @@
+[
+    {
+        "GameTitle": "Beatmania IIDX",
+        "DifficultyType": [
+            "Beginner",
+            "Normal",
+            "Hyper",
+            "Another",
+            "Leggendaria"
+        ],
+        "ClearType": [
+            "Failed",
+            "Assist",
+            "Easy",
+            "Normal",
+            "Hard",
+            "EX-Hard",
+            "Full-Combo"
+        ],
+        "GradeType": [
+            "F",
+            "E",
+            "D",
+            "C",
+            "B",
+            "A",
+            "AA",
+            "AAA"
+        ]
+    },
+    {
+        "GameTitle": "プロジェクトセカイ",
+        "DifficultyType": [
+            "Easy",
+            "Normal",
+            "Hard",
+            "Expart",
+            "Master"
+        ],
+        "ClearType": [
+            "Failed",
+            "Clear",
+            "Full-Combo"
+        ],
+        "GradeType": [
+            "C",
+            "B",
+            "A",
+            "S"
+        ]
+    }
+]

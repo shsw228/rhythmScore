@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B73B2EB529861FC200B81EFD /* UIViewController+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B2EB429861FC200B81EFD /* UIViewController+ex.swift */; };
+		B78C352829731FAB000AEDD2 /* GameListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C352729731FAB000AEDD2 /* GameListCell.swift */; };
+		B78C352F297321DF000AEDD2 /* GameListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78C352E297321DF000AEDD2 /* GameListCell.xib */; };
+		B78C3532297ABC9D000AEDD2 /* game.json in Resources */ = {isa = PBXBuildFile; fileRef = B78C3531297ABC9D000AEDD2 /* game.json */; };
 		B7D93B3F29728DDA0016F7E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B3E29728DDA0016F7E8 /* AppDelegate.swift */; };
 		B7D93B4129728DDA0016F7E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B4029728DDA0016F7E8 /* SceneDelegate.swift */; };
-		B7D93B4329728DDA0016F7E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B4229728DDA0016F7E8 /* ViewController.swift */; };
-		B7D93B4629728DDA0016F7E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D93B4429728DDA0016F7E8 /* Main.storyboard */; };
+		B7D93B4329728DDA0016F7E8 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B4229728DDA0016F7E8 /* GameListViewController.swift */; };
+		B7D93B4629728DDA0016F7E8 /* GameList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D93B4429728DDA0016F7E8 /* GameList.storyboard */; };
 		B7D93B4929728DDA0016F7E8 /* rhythmScore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B4729728DDA0016F7E8 /* rhythmScore.xcdatamodeld */; };
 		B7D93B4B29728DDB0016F7E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7D93B4A29728DDB0016F7E8 /* Assets.xcassets */; };
 		B7D93B4E29728DDB0016F7E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D93B4C29728DDB0016F7E8 /* LaunchScreen.storyboard */; };
 		B7D93B5929728DDC0016F7E8 /* rhythmScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B5829728DDC0016F7E8 /* rhythmScoreTests.swift */; };
 		B7D93B6329728DDC0016F7E8 /* rhythmScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B6229728DDC0016F7E8 /* rhythmScoreUITests.swift */; };
 		B7D93B6529728DDC0016F7E8 /* rhythmScoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B6429728DDC0016F7E8 /* rhythmScoreUITestsLaunchTests.swift */; };
-		B7D93B722972C3B20016F7E8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B712972C3B20016F7E8 /* HomeViewModel.swift */; };
+		B7D93B722972C3B20016F7E8 /* GameListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B712972C3B20016F7E8 /* GameListViewModel.swift */; };
 		B7D93B762972CC300016F7E8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D93B752972CC300016F7E8 /* Constant.swift */; };
 		B7D93B8029730A120016F7E8 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = B7D93B7F29730A120016F7E8 /* RswiftLibrary */; };
 /* End PBXBuildFile section */
@@ -40,11 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B73B2EB429861FC200B81EFD /* UIViewController+ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ex.swift"; sourceTree = "<group>"; };
+		B78C352729731FAB000AEDD2 /* GameListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListCell.swift; sourceTree = "<group>"; };
+		B78C352E297321DF000AEDD2 /* GameListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameListCell.xib; sourceTree = "<group>"; };
+		B78C3531297ABC9D000AEDD2 /* game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = game.json; sourceTree = "<group>"; };
 		B7D93B3B29728DDA0016F7E8 /* rhythmScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rhythmScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D93B3E29728DDA0016F7E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7D93B4029728DDA0016F7E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B7D93B4229728DDA0016F7E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B7D93B4529728DDA0016F7E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7D93B4229728DDA0016F7E8 /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
+		B7D93B4529728DDA0016F7E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GameList.storyboard; sourceTree = "<group>"; };
 		B7D93B4829728DDA0016F7E8 /* rhythmScore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = rhythmScore.xcdatamodel; sourceTree = "<group>"; };
 		B7D93B4A29728DDB0016F7E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7D93B4D29728DDB0016F7E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,7 +62,7 @@
 		B7D93B5E29728DDC0016F7E8 /* rhythmScoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rhythmScoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D93B6229728DDC0016F7E8 /* rhythmScoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rhythmScoreUITests.swift; sourceTree = "<group>"; };
 		B7D93B6429728DDC0016F7E8 /* rhythmScoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rhythmScoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B7D93B712972C3B20016F7E8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B7D93B712972C3B20016F7E8 /* GameListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewModel.swift; sourceTree = "<group>"; };
 		B7D93B752972CC300016F7E8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +92,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B73B2EB229861F9900B81EFD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B73B2EB429861FC200B81EFD /* UIViewController+ex.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B78C352129731CBB000AEDD2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B78C352629731F01000AEDD2 /* GameList */,
+				B78C352529731EF8000AEDD2 /* SongList */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B78C352229731EAE000AEDD2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B78C352329731EC7000AEDD2 /* GameList */,
+				B78C352429731EE2000AEDD2 /* SongList */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B78C352329731EC7000AEDD2 /* GameList */ = {
+			isa = PBXGroup;
+			children = (
+				B78C352A29732031000AEDD2 /* Cell */,
+				B7D93B4429728DDA0016F7E8 /* GameList.storyboard */,
+				B7D93B4229728DDA0016F7E8 /* GameListViewController.swift */,
+			);
+			path = GameList;
+			sourceTree = "<group>";
+		};
+		B78C352429731EE2000AEDD2 /* SongList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SongList;
+			sourceTree = "<group>";
+		};
+		B78C352529731EF8000AEDD2 /* SongList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SongList;
+			sourceTree = "<group>";
+		};
+		B78C352629731F01000AEDD2 /* GameList */ = {
+			isa = PBXGroup;
+			children = (
+				B7D93B712972C3B20016F7E8 /* GameListViewModel.swift */,
+			);
+			path = GameList;
+			sourceTree = "<group>";
+		};
+		B78C352A29732031000AEDD2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B78C352729731FAB000AEDD2 /* GameListCell.swift */,
+				B78C352E297321DF000AEDD2 /* GameListCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		B7D93B3229728DDA0016F7E8 = {
 			isa = PBXGroup;
 			children = (
@@ -107,12 +182,12 @@
 		B7D93B3D29728DDA0016F7E8 /* rhythmScore */ = {
 			isa = PBXGroup;
 			children = (
+				B73B2EB229861F9900B81EFD /* Extension */,
 				B7D93B742972CB7A0016F7E8 /* Supporting File */,
 				B7D93B732972CB4E0016F7E8 /* Resources */,
-				B7D93B4229728DDA0016F7E8 /* ViewController.swift */,
-				B7D93B712972C3B20016F7E8 /* HomeViewModel.swift */,
-				B7D93B4429728DDA0016F7E8 /* Main.storyboard */,
 				B7D93B4729728DDA0016F7E8 /* rhythmScore.xcdatamodeld */,
+				B78C352229731EAE000AEDD2 /* View */,
+				B78C352129731CBB000AEDD2 /* Models */,
 			);
 			path = rhythmScore;
 			sourceTree = "<group>";
@@ -137,6 +212,7 @@
 		B7D93B732972CB4E0016F7E8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B78C3531297ABC9D000AEDD2 /* game.json */,
 				B7D93B4A29728DDB0016F7E8 /* Assets.xcassets */,
 				B7D93B752972CC300016F7E8 /* Constant.swift */,
 			);
@@ -267,7 +343,9 @@
 			files = (
 				B7D93B4E29728DDB0016F7E8 /* LaunchScreen.storyboard in Resources */,
 				B7D93B4B29728DDB0016F7E8 /* Assets.xcassets in Resources */,
-				B7D93B4629728DDA0016F7E8 /* Main.storyboard in Resources */,
+				B7D93B4629728DDA0016F7E8 /* GameList.storyboard in Resources */,
+				B78C352F297321DF000AEDD2 /* GameListCell.xib in Resources */,
+				B78C3532297ABC9D000AEDD2 /* game.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,9 +371,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7D93B4929728DDA0016F7E8 /* rhythmScore.xcdatamodeld in Sources */,
-				B7D93B4329728DDA0016F7E8 /* ViewController.swift in Sources */,
+				B73B2EB529861FC200B81EFD /* UIViewController+ex.swift in Sources */,
+				B7D93B4329728DDA0016F7E8 /* GameListViewController.swift in Sources */,
+				B78C352829731FAB000AEDD2 /* GameListCell.swift in Sources */,
 				B7D93B3F29728DDA0016F7E8 /* AppDelegate.swift in Sources */,
-				B7D93B722972C3B20016F7E8 /* HomeViewModel.swift in Sources */,
+				B7D93B722972C3B20016F7E8 /* GameListViewModel.swift in Sources */,
 				B7D93B4129728DDA0016F7E8 /* SceneDelegate.swift in Sources */,
 				B7D93B762972CC300016F7E8 /* Constant.swift in Sources */,
 			);
@@ -338,12 +418,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B7D93B4429728DDA0016F7E8 /* Main.storyboard */ = {
+		B7D93B4429728DDA0016F7E8 /* GameList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B7D93B4529728DDA0016F7E8 /* Base */,
 			);
-			name = Main.storyboard;
+			name = GameList.storyboard;
 			sourceTree = "<group>";
 		};
 		B7D93B4C29728DDB0016F7E8 /* LaunchScreen.storyboard */ = {
@@ -481,9 +561,10 @@
 				DEVELOPMENT_TEAM = 3S7EA557V7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "rhythmScore/Supporting File/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = GameList;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -509,9 +590,10 @@
 				DEVELOPMENT_TEAM = 3S7EA557V7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "rhythmScore/Supporting File/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = GameList;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

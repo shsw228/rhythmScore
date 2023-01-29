@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  rhythmScore
 //
-//  Created by Kengo Tate on 2023/01/14.
+//  Created by shsw228 on 2023/01/14.
 //
 
 import UIKit
