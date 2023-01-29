@@ -25,7 +25,8 @@ DerivedData/
 ## library
 Pods/*
 BuildTools/.build/
-*/Settings.bundle/com.mono0926.LicensePlist*
+*/SupportingFile/Settings.bundle/com.mono0926.LicensePlist/*
+*/SupportingFile/Settings.bundle/com.mono0926.LicensePlist*
 Carthage/Build/
 ## Other
 *.moved-aside
