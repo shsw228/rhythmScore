@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B73B2EB529861FC200B81EFD /* UIViewController+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B2EB429861FC200B81EFD /* UIViewController+ex.swift */; };
+		B73B2EC4298657FF00B81EFD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B73B2EC3298657FF00B81EFD /* Settings.bundle */; };
 		B78C352829731FAB000AEDD2 /* GameListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C352729731FAB000AEDD2 /* GameListCell.swift */; };
 		B78C352F297321DF000AEDD2 /* GameListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78C352E297321DF000AEDD2 /* GameListCell.xib */; };
 		B78C3532297ABC9D000AEDD2 /* game.json in Resources */ = {isa = PBXBuildFile; fileRef = B78C3531297ABC9D000AEDD2 /* game.json */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		B73B2EB429861FC200B81EFD /* UIViewController+ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ex.swift"; sourceTree = "<group>"; };
+		B73B2EC3298657FF00B81EFD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		B78C352729731FAB000AEDD2 /* GameListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListCell.swift; sourceTree = "<group>"; };
 		B78C352E297321DF000AEDD2 /* GameListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameListCell.xib; sourceTree = "<group>"; };
 		B78C3531297ABC9D000AEDD2 /* game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = game.json; sourceTree = "<group>"; };
@@ -183,7 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				B73B2EB229861F9900B81EFD /* Extension */,
-				B7D93B742972CB7A0016F7E8 /* Supporting File */,
+				B7D93B742972CB7A0016F7E8 /* SupportingFile */,
 				B7D93B732972CB4E0016F7E8 /* Resources */,
 				B7D93B4729728DDA0016F7E8 /* rhythmScore.xcdatamodeld */,
 				B78C352229731EAE000AEDD2 /* View */,
@@ -219,15 +221,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		B7D93B742972CB7A0016F7E8 /* Supporting File */ = {
+		B7D93B742972CB7A0016F7E8 /* SupportingFile */ = {
 			isa = PBXGroup;
 			children = (
 				B7D93B4029728DDA0016F7E8 /* SceneDelegate.swift */,
 				B7D93B3E29728DDA0016F7E8 /* AppDelegate.swift */,
 				B7D93B4C29728DDB0016F7E8 /* LaunchScreen.storyboard */,
 				B7D93B4F29728DDB0016F7E8 /* Info.plist */,
+				B73B2EC3298657FF00B81EFD /* Settings.bundle */,
 			);
-			path = "Supporting File";
+			path = SupportingFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,10 +243,13 @@
 				B7D93B3729728DDA0016F7E8 /* Sources */,
 				B7D93B3829728DDA0016F7E8 /* Frameworks */,
 				B7D93B3929728DDA0016F7E8 /* Resources */,
+				B73B2EC5298686E800B81EFD /* ShellScript */,
+				B73B2EC6298686FF00B81EFD /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B73B2EC02986579C00B81EFD /* PBXTargetDependency */,
 				B7D93B8429730E4E0016F7E8 /* PBXTargetDependency */,
 			);
 			name = rhythmScore;
@@ -345,6 +351,7 @@
 				B7D93B4B29728DDB0016F7E8 /* Assets.xcassets in Resources */,
 				B7D93B4629728DDA0016F7E8 /* GameList.storyboard in Resources */,
 				B78C352F297321DF000AEDD2 /* GameListCell.xib in Resources */,
+				B73B2EC4298657FF00B81EFD /* Settings.bundle in Resources */,
 				B78C3532297ABC9D000AEDD2 /* game.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +371,43 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B73B2EC5298686E800B81EFD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd BuildTools\n\nxcrun --sdk macosx swift build -c release\n";
+		};
+		B73B2EC6298686FF00B81EFD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd BuildTools\n\nxcrun --sdk macosx swift build -c release \\\n--package-path .build/checkouts/LicensePlist \\\n--product license-plist\n\n.build/checkouts/LicensePlist/.build/release/license-plist --xcodeproj-path $PROJECT_FILE_PATH --package-path Package.swift --output-path $SRCROOT/$TARGET_NAME/SupportingFile/Settings.bundle\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B7D93B3729728DDA0016F7E8 /* Sources */ = {
@@ -401,6 +445,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B73B2EC02986579C00B81EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = B73B2EBF2986579C00B81EFD /* PrepareLicenseList */;
+		};
 		B7D93B5629728DDC0016F7E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B7D93B3A29728DDA0016F7E8 /* rhythmScore */;
@@ -560,7 +608,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3S7EA557V7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "rhythmScore/Supporting File/Info.plist";
+				INFOPLIST_FILE = rhythmScore/SupportingFile/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -589,7 +637,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3S7EA557V7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "rhythmScore/Supporting File/Info.plist";
+				INFOPLIST_FILE = rhythmScore/SupportingFile/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -727,6 +775,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B73B2EBC2986577800B81EFD /* XCRemoteSwiftPackageReference "LicenseList" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cybozu/LicenseList";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
 		B7D93B7E29730A120016F7E8 /* XCRemoteSwiftPackageReference "R" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mac-cain13/R.swift#xcode-project---spm";
@@ -738,6 +794,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B73B2EBF2986579C00B81EFD /* PrepareLicenseList */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B73B2EBC2986577800B81EFD /* XCRemoteSwiftPackageReference "LicenseList" */;
+			productName = "plugin:PrepareLicenseList";
+		};
 		B7D93B7F29730A120016F7E8 /* RswiftLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B7D93B7E29730A120016F7E8 /* XCRemoteSwiftPackageReference "R" */;
