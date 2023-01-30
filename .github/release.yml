@@ -1,0 +1,17 @@
+changelog:
+  exclude:
+    authors:
+      - github-actions
+  categories:
+    - title: New Features ✨
+      labels:
+        - "add"
+    - title: Bug Fix 🐛
+      labels:
+        - "bugfix"
+    - title: Deprecated 🗑️
+      labels:
+        - "deprecate"
+    - title: Other Changes 🛠
+      labels:
+        - "*"
