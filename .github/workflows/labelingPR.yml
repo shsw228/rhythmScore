@@ -18,6 +18,7 @@ jobs:
       - name: Get label name
         id: label_name
         run: |
+          key_name=label_name
           branch_type=$(echo ${{github.head_ref}} | cut -d "/" -f1)
           if [ $branch_type == 'feature' ]; then
             label_name=$(echo "add")
@@ -26,7 +27,7 @@ jobs:
           else
             label_name=""
           fi
-          echo "{label_name} ={label_name}" >> $GITHUB_OUTPUT
+          echo "${key_name}=${label_name}" >> $GITHUB_OUTPUT
 
       # PRにラベルを付与する
       - name: Auto labeling
