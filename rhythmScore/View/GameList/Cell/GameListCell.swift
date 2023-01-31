@@ -23,8 +23,8 @@ class GameListCell: UICollectionViewCell {
     }
     
     override func prepareForReuse() {
-//        super.prepareForReuse()
-//        titleLabel.text = nil
+        super.prepareForReuse()
+        titleLabel.text = nil
     }
     
     func setup() {
