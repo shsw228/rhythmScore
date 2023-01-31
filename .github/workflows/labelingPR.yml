@@ -26,7 +26,7 @@ jobs:
           else
             label_name=""
           fi
-          echo "{label_name} ={label_name}" >> $GITHUB_OUTPUT
+          echo "label_name=${label_name}" >> $GITHUB_OUTPUT
 
       # PRにラベルを付与する
       - name: Auto labeling
