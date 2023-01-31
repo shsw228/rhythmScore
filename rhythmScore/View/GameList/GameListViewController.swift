@@ -13,16 +13,29 @@ class GameListViewController: UIViewController {
     @IBOutlet private weak var collectionView: UICollectionView! {
         didSet{
             collectionView.dataSource = self
-            registerCells()
+            collectionView.delegate = self
+            collectionView.register(UINib(nibName: R.nib.gameListCell.name, bundle: nil), forCellWithReuseIdentifier: R.nib.gameListCell.name)
+            collectionView.collectionViewLayout = makeCollectionViewLayout()
         }
     }
     
+    private var gameList = [GameEntity]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationTitle(title: self.nibName!)
+        fetchItems()
+    }
+    
+    // CoreDataからの読み出し、CollectionViewの画面更新
+    private func fetchItems() {
+        gameList = CoreDataRepository.array()
+        //TODO: 画面更新　必要ないかも
         
-        collectionView.collectionViewLayout = {
+    }
+    
+    private func makeCollectionViewLayout() -> UICollectionViewLayout {
+        
             let layout = UICollectionViewCompositionalLayout {(sectionIndex, env) -> NSCollectionLayoutSection? in
                 let itemInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
                 // item
@@ -50,18 +63,12 @@ class GameListViewController: UIViewController {
             
             
             return layout
-        }()
-    }
-    
-    
-    private func registerCells() {
         
-        collectionView.register(UINib(nibName: R.nib.gameListCell.name, bundle: nil), forCellWithReuseIdentifier: R.nib.gameListCell.name)
     }
 }
 extension GameListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return gameList.count
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -70,9 +77,8 @@ extension GameListViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.nib.gameListCell.name, for: indexPath) as? GameListCell else {
             fatalError()
         }
-        
+        cell.titleLabel.text = gameList[indexPath.row].title
         return cell
     }
-    
-    
 }
+extension GameListViewController:UICollectionViewDelegate { }

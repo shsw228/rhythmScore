@@ -1,5 +1,5 @@
 //
-//  GameListViewModel.swift
+//  GameListModel.swift
 //  rhythmScore
 //
 //  Created by shsw228 on 2023/01/14.
@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-struct HomeGamesListViewModel {
+struct GameListModel {
     var gameTitle: String
-    var iconImage = UIImage(systemName: "archivebox")
+    var hexValue: String
     
 }
