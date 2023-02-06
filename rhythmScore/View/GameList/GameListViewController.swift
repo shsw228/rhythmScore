@@ -23,7 +23,8 @@ class GameListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNavigationTitle(title: self.nibName!)
+        setNavigationBar(title: R.storyboard.gameList.name)
+        setNavigationItem()
         fetchItems()
     }
     
@@ -32,6 +33,16 @@ class GameListViewController: UIViewController {
         gameList = CoreDataRepository.array()
         //TODO: 画面更新　必要ないかも
         
+    }
+    private func setNavigationItem() {
+        let item = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(pushAddButton(_:)))
+        navigationItem.rightBarButtonItem = item
+    }
+    
+    @objc private func pushAddButton(_ sender: UIBarButtonItem){
+        print("DEBUG:pushAddButton")
+        CoreDataRepository.add(GameEntity.new(model: GameListModel.init(gameTitle: "サンプルアイテム")))
+        CoreDataRepository.save()
     }
     
     private func makeCollectionViewLayout() -> UICollectionViewLayout {
@@ -51,7 +62,6 @@ class GameListViewController: UIViewController {
                     widthDimension: .fractionalWidth(1.0),
                     heightDimension: .fractionalWidth(1/2 * 0.70 )
                 )
-//
                 let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
                 // section
                 let section = NSCollectionLayoutSection(group: group)
@@ -78,6 +88,9 @@ extension GameListViewController: UICollectionViewDataSource {
             fatalError()
         }
         cell.titleLabel.text = gameList[indexPath.row].title
+        cell.backgroundColor = UIColor.hex(string: gameList[indexPath.row].hexValue , alpha: 1.0)
+        cell.IconImageView.image = UIImage(systemName: gameList[indexPath.row].icon)
+        cell.IconImageView.tintColor = .white
         return cell
     }
 }

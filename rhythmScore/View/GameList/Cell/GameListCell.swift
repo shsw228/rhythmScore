@@ -17,18 +17,15 @@ class GameListCell: UICollectionViewCell {
     // override
     override func awakeFromNib() {
         super.awakeFromNib()
-        backgroundColor = [.systemOrange,.systemBlue,.systemRed,.systemGreen].randomElement()
-
         layer.cornerRadius = 15
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
         titleLabel.text = nil
+        backgroundColor = .clear
+        IconImageView.tintColor = .white
     }
     
-    func setup() {
-        
-    }
 }
 

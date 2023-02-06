@@ -11,7 +11,7 @@ public enum Constant {
     
     ///　アプリのストアURL
     static let applicationUrl = URL.init(string: "https://itunes.apple.com/jp/app/")!
-    
-    
-    
+
 }
+
+

@@ -2,7 +2,7 @@
 //  GameEntity+CoreDataClass.swift
 //  rhythmScore
 //  
-//  Created by shsw228 on 2023/01/31
+//  Created by shsw228 on 2023/02/01
 //
 
 //
@@ -15,6 +15,8 @@ public class GameEntity: NSManagedObject {
     static func new(model: GameListModel) -> GameEntity {
             let entity: GameEntity = CoreDataRepository.entity()
         entity.title = model.gameTitle
+        entity.hexValue = model.hexValue
+        entity.icon = "archivebox"
             return entity
         }
 

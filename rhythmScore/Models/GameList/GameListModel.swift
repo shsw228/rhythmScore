@@ -12,4 +12,9 @@ struct GameListModel {
     var gameTitle: String
     var hexValue: String
     
+    
+    init(gameTitle: String, hexValue: String? = nil) {
+        self.gameTitle = gameTitle
+        self.hexValue = hexValue ?? UIColor.red.toHex()
+    }
 }

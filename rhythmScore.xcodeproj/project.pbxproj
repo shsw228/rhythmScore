@@ -11,8 +11,10 @@
 		B73B2EC4298657FF00B81EFD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B73B2EC3298657FF00B81EFD /* Settings.bundle */; };
 		B73B2EDE2989357B00B81EFD /* rhythmScore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B73B2EDC2989356D00B81EFD /* rhythmScore.xcdatamodeld */; };
 		B73B2EE0298939DC00B81EFD /* CoreDataRepogitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B2EDF298939DC00B81EFD /* CoreDataRepogitory.swift */; };
-		B73B2EE429893BC500B81EFD /* GameEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B2EE229893BC500B81EFD /* GameEntity+CoreDataProperties.swift */; };
-		B73B2EE529893BC500B81EFD /* GameEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B2EE329893BC500B81EFD /* GameEntity+CoreDataClass.swift */; };
+		B73B2EF02989845200B81EFD /* GameEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B2EEE2989845200B81EFD /* GameEntity+CoreDataClass.swift */; };
+		B73B2EF12989845200B81EFD /* GameEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B2EEF2989845200B81EFD /* GameEntity+CoreDataProperties.swift */; };
+		B73B2EF32989857300B81EFD /* UIColor+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B2EF22989857300B81EFD /* UIColor+ex.swift */; };
+		B73B2EF6298EE55900B81EFD /* GameListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B2EF5298EE55900B81EFD /* GameListViewModel.swift */; };
 		B78C352829731FAB000AEDD2 /* GameListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C352729731FAB000AEDD2 /* GameListCell.swift */; };
 		B78C352F297321DF000AEDD2 /* GameListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78C352E297321DF000AEDD2 /* GameListCell.xib */; };
 		B78C3532297ABC9D000AEDD2 /* game.json in Resources */ = {isa = PBXBuildFile; fileRef = B78C3531297ABC9D000AEDD2 /* game.json */; };
@@ -52,8 +54,11 @@
 		B73B2EC3298657FF00B81EFD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		B73B2EDD2989356D00B81EFD /* rhythmScore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = rhythmScore.xcdatamodel; sourceTree = "<group>"; };
 		B73B2EDF298939DC00B81EFD /* CoreDataRepogitory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRepogitory.swift; sourceTree = "<group>"; };
-		B73B2EE229893BC500B81EFD /* GameEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GameEntity+CoreDataProperties.swift"; path = "Entity/GameEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B73B2EE329893BC500B81EFD /* GameEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GameEntity+CoreDataClass.swift"; path = "Entity/GameEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B73B2EEA2989836100B81EFD /* 1.0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 1.0.xcdatamodel; sourceTree = "<group>"; };
+		B73B2EEE2989845200B81EFD /* GameEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameEntity+CoreDataClass.swift"; path = "rhythmScore/Entity/GameEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		B73B2EEF2989845200B81EFD /* GameEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameEntity+CoreDataProperties.swift"; path = "rhythmScore/Entity/GameEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B73B2EF22989857300B81EFD /* UIColor+ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ex.swift"; sourceTree = "<group>"; };
+		B73B2EF5298EE55900B81EFD /* GameListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewModel.swift; sourceTree = "<group>"; };
 		B78C352729731FAB000AEDD2 /* GameListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListCell.swift; sourceTree = "<group>"; };
 		B78C352E297321DF000AEDD2 /* GameListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameListCell.xib; sourceTree = "<group>"; };
 		B78C3531297ABC9D000AEDD2 /* game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = game.json; sourceTree = "<group>"; };
@@ -104,8 +109,17 @@
 			isa = PBXGroup;
 			children = (
 				B73B2EB429861FC200B81EFD /* UIViewController+ex.swift */,
+				B73B2EF22989857300B81EFD /* UIColor+ex.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		B73B2EF4298EE53D00B81EFD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B73B2EF5298EE55900B81EFD /* GameListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		B78C352129731CBB000AEDD2 /* Models */ = {
@@ -170,6 +184,8 @@
 		B7D93B3229728DDA0016F7E8 = {
 			isa = PBXGroup;
 			children = (
+				B73B2EEE2989845200B81EFD /* GameEntity+CoreDataClass.swift */,
+				B73B2EEF2989845200B81EFD /* GameEntity+CoreDataProperties.swift */,
 				B7D93B3D29728DDA0016F7E8 /* rhythmScore */,
 				B7D93B5729728DDC0016F7E8 /* rhythmScoreTests */,
 				B7D93B6129728DDC0016F7E8 /* rhythmScoreUITests */,
@@ -190,9 +206,8 @@
 		B7D93B3D29728DDA0016F7E8 /* rhythmScore */ = {
 			isa = PBXGroup;
 			children = (
+				B73B2EF4298EE53D00B81EFD /* ViewModel */,
 				B73B2EDC2989356D00B81EFD /* rhythmScore.xcdatamodeld */,
-				B73B2EE329893BC500B81EFD /* GameEntity+CoreDataClass.swift */,
-				B73B2EE229893BC500B81EFD /* GameEntity+CoreDataProperties.swift */,
 				B73B2EB229861F9900B81EFD /* Extension */,
 				B7D93B742972CB7A0016F7E8 /* SupportingFile */,
 				B7D93B732972CB4E0016F7E8 /* Resources */,
@@ -424,15 +439,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73B2EDE2989357B00B81EFD /* rhythmScore.xcdatamodeld in Sources */,
-				B73B2EE529893BC500B81EFD /* GameEntity+CoreDataClass.swift in Sources */,
 				B73B2EB529861FC200B81EFD /* UIViewController+ex.swift in Sources */,
-				B73B2EE429893BC500B81EFD /* GameEntity+CoreDataProperties.swift in Sources */,
 				B7D93B4329728DDA0016F7E8 /* GameListViewController.swift in Sources */,
 				B78C352829731FAB000AEDD2 /* GameListCell.swift in Sources */,
+				B73B2EF32989857300B81EFD /* UIColor+ex.swift in Sources */,
+				B73B2EF6298EE55900B81EFD /* GameListViewModel.swift in Sources */,
 				B7D93B3F29728DDA0016F7E8 /* AppDelegate.swift in Sources */,
 				B7D93B722972C3B20016F7E8 /* GameListModel.swift in Sources */,
+				B73B2EF02989845200B81EFD /* GameEntity+CoreDataClass.swift in Sources */,
 				B7D93B4129728DDA0016F7E8 /* SceneDelegate.swift in Sources */,
 				B73B2EE0298939DC00B81EFD /* CoreDataRepogitory.swift in Sources */,
+				B73B2EF12989845200B81EFD /* GameEntity+CoreDataProperties.swift in Sources */,
 				B7D93B762972CC300016F7E8 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -826,6 +843,7 @@
 		B73B2EDC2989356D00B81EFD /* rhythmScore.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				B73B2EEA2989836100B81EFD /* 1.0.xcdatamodel */,
 				B73B2EDD2989356D00B81EFD /* rhythmScore.xcdatamodel */,
 			);
 			currentVersion = B73B2EDD2989356D00B81EFD /* rhythmScore.xcdatamodel */;

@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension UIViewController {
-    func setNavigationTitle(title: String) {
+    func setNavigationBar(title: String) {
         navigationItem.title = title
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .automatic
