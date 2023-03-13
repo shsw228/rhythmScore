@@ -79,12 +79,10 @@ extension CoreDataRepository {
         let array:[GameEntity] = array()
         guard array.isEmpty else { return }
         
-        [GameListModel(gameTitle: "Beatmania IIDX", hexValue: "008B00"),
-         GameListModel(gameTitle: "Deemo", hexValue: "0099CC"),
-         GameListModel(gameTitle: "ラブライブ！ スクールアイドルフェスティバル", hexValue: "0D0D0D"),
-         GameListModel(gameTitle: "アイドルマスター シンデレラガールズ スターライトステージ", hexValue: "138F6A"),
-         GameListModel.init(gameTitle: "Arcaea", hexValue: "120A8F"),
-         GameListModel.init(gameTitle: "プロセカ", hexValue: "215E21")]
+        [Game(title: "Beatmania IIDX", hexValue: "008B00"),
+         Game(title: "Deemo", hexValue: "0099CC"),
+         Game(title: "ラブライブ！ スクールアイドルフェスティバル", hexValue: "0D0D0D"),
+         Game(title: "アイドルマスター シンデレラガールズ スターライトステージ", hexValue: "138F6A")]
             .compactMap{ GameEntity.new(model:$0) }
             .forEach{ add($0) }
     }

@@ -8,13 +8,12 @@
 import Foundation
 import UIKit
 
-struct GameListModel {
-    var gameTitle: String
+class Game {
+    var title: String
     var hexValue: String
     
-    
-    init(gameTitle: String, hexValue: String? = nil) {
-        self.gameTitle = gameTitle
+    init(title: String, hexValue: String? = nil) {
+        self.title = title
         self.hexValue = hexValue ?? UIColor.red.toHex()
     }
 }
